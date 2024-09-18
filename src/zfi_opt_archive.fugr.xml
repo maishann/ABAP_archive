@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Optische Archivierung Korrespondenzen</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFI_OPT_ARCHIVETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFI_OPT_ARCHIVE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFI_OPT_ARCHIVE_CORRESPONDENCE</FUNCNAME>
+     <SHORT_TEXT>OPEN_FI Musterbaustein SAP ArchiveLink Zeitpunkt 00002310</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_BKORM</PARAMETER>
+       <DBFIELD>BKORM</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_KOART</PARAMETER>
+       <DBFIELD>BKORM-KOART</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_KNA1</PARAMETER>
+       <DBFIELD>KNA1</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_KNB1</PARAMETER>
+       <DBFIELD>KNB1</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_LFA1</PARAMETER>
+       <DBFIELD>LFA1</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_LFB1</PARAMETER>
+       <DBFIELD>LFB1</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>C_FINAA</PARAMETER>
+       <DBFIELD>FINAA</DBFIELD>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>C_ITCPO</PARAMETER>
+       <DBFIELD>ITCPO</DBFIELD>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>C_ARCHIVE_INDEX</PARAMETER>
+       <DBFIELD>TOA_DARA</DBFIELD>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>C_ARCHIVE_PARAMS</PARAMETER>
+       <DBFIELD>ARC_PARAMS</DBFIELD>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSCHA>
+     </CHANGING>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_FIMSG</PARAMETER>
+       <DBSTRUCT>FIMSG</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_BKORM</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_KOART</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_KNA1</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_KNB1</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_LFA1</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_LFB1</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_FIMSG</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>C_FINAA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>C_ITCPO</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>C_ARCHIVE_INDEX</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>C_ARCHIVE_PARAMS</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZFI_OPT_ARCHIVE_CORRESPONDENCE>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_OPT_ARCHIVE_CORRESPONDENCE</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00022</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_OPT_ARCHIVE_CORRESPONDENCE</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Baustein dient als reiner Musterbaustein für die Ablage ausgehender</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Korrespondenzen über SAP ArchiveLink. Die enthaltenen Anweisungen sind</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>lauffähig und können gegebenenfalls erweitert werden. Wollen Sie die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionalität nutzen, so müssen Sie einen eigenen Funktionsbaustein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bereitstellen, der entweder eine direkte Kopie des Musters ist oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entsprechend erweitert wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>    Der Musterbaustein selbst darf nicht verändert werden!</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Vorgehensweise zur Aktivierung der genannten Funktionalität</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entnehmen Sie bitte dem Kapitel &apos;Ablage ausgehender Dokumente (FI)&apos; in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der Dokumentation &apos;SAP ArchiveLink - Szenarien der Anwendung&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Zum Kopieren des Funktionsbausteins in Ihren Namensraum lesen Sie</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:SIMG.SIMG_CFORFBFIBF&gt;Business Transaction Events verwenden&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>PROCESS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Prozess erlaubt die Ermittlung der für die Korrespondenzen zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verwendenden Druckparameter (Struktur ITCPO) sowie der Parameter zur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>elektronischen Ablage der ausgehenden Dokumente, sofern dies gewünscht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SCHNITTSTELLE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Auf Basis der übergebenen Schnittstellenparameter (I_KOART, I_BKORM)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden Kontoart (Debitor/Kreditor) und Korrespondenzart ermittelt. Die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Parameter zum Druck der Korrespondenz können modifiziert und die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ablageparameter gesetzt werden.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZFI_OPT_ARCHIVE_CORRESPONDENCE>
+  </asx:values>
+ </asx:abap>
+</abapGit>
